@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>NZ0H</title>
   <subtitle>Etudiant en deuxième année de BUT R&amp;T</subtitle>
-  <updated>2023-09-01T16:16:21+02:00</updated>
+  <updated>2023-09-01T17:50:11+02:00</updated>
   <author>
     <name>Enzo</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,199 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>SQL injection - Authentification</title>
+    <link href="http://localhost:4000/posts/sql-injection-authentification/" rel="alternate" type="text/html" title="SQL injection - Authentification" />
+    <published>2023-09-01T00:00:00+02:00</published>
+  
+    <updated>2023-09-01T00:00:00+02:00</updated>
+  
+    <id>http://localhost:4000/posts/sql-injection-authentification/</id>
+    <content src="http://localhost:4000/posts/sql-injection-authentification/" />
+    <author>
+      <name>NZ0H</name>
+    </author>
+
+  
+    
+    <category term="Root-Me" />
+    
+    <category term="Web-Serveur" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Etape 1 :
+
+Voici à quoi ressemble la page de login pour l’admin : 
+
+
+On peut voir un champ de login ou potentiellement on pourrait mettre ‘admin’ et un champ password où l’on mettra le mot de passe
+
+Etape 2 :
+
+Comem le dit le titre du défie, il y a une faille sql d’authentification sur la page, pour commencer on va faire l’un des tests les plus simple de faille sql :
+
+
+
+Login : ‘admin’
+
+Passwor...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>PHP - assert()</title>
+    <link href="http://localhost:4000/posts/php-assert/" rel="alternate" type="text/html" title="PHP - assert()" />
+    <published>2023-09-01T00:00:00+02:00</published>
+  
+    <updated>2023-09-01T00:00:00+02:00</updated>
+  
+    <id>http://localhost:4000/posts/php-assert/</id>
+    <content src="http://localhost:4000/posts/php-assert/" />
+    <author>
+      <name>NZ0H</name>
+    </author>
+
+  
+    
+    <category term="Root-Me" />
+    
+    <category term="Web-Serveur" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Etape 1
+
+L’objectif est premierement d’analyser la page sur laquel on apparait.
+
+
+
+On peut voir une page simple, sans information à part une petite blague du créateur du défie :
+“You will never find out where our secrets are located… ahahaha (Evil laugh)”
+
+Etape 2
+
+On peut voir qu’il y a une barre de navigation avec “Home“, “About“ , “Contact“, allons voir où cela mène.
+
+Voici le contenu de la ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>OSPF-Authentification</title>
+    <link href="http://localhost:4000/posts/ospf-authentification/" rel="alternate" type="text/html" title="OSPF-Authentification" />
+    <published>2023-09-01T00:00:00+02:00</published>
+  
+    <updated>2023-09-01T00:00:00+02:00</updated>
+  
+    <id>http://localhost:4000/posts/ospf-authentification/</id>
+    <content src="http://localhost:4000/posts/ospf-authentification/" />
+    <author>
+      <name>NZ0H</name>
+    </author>
+
+  
+    
+    <category term="Root-Me" />
+    
+    <category term="Réseau" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Etape 1 :
+
+On ouvre la capture Wireshark :
+
+
+
+On peut voir que la capture a déjà était filtré, il y a que le protocole OSPF, allons voir un des paquets.
+
+Etape 2 :
+
+L’objectif est de trouver le champ OSPF dans le paquet, et de trouver diverse information sur l’authentification.
+
+
+
+Auth Type -&amp;gt; 2 signifie que le mot de passe est sous la forme d’un hash, 1 correspond au mot de passe affiché cl...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Encodage ASCII</title>
+    <link href="http://localhost:4000/posts/encodage-ascii/" rel="alternate" type="text/html" title="Encodage ASCII" />
+    <published>2023-09-01T00:00:00+02:00</published>
+  
+    <updated>2023-09-01T00:00:00+02:00</updated>
+  
+    <id>http://localhost:4000/posts/encodage-ascii/</id>
+    <content src="http://localhost:4000/posts/encodage-ascii/" />
+    <author>
+      <name>NZ0H</name>
+    </author>
+
+  
+    
+    <category term="Root-Me" />
+    
+    <category term="Cryptographie" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Etape 1 :
+
+On peut identifier que c’est un code ASCII grâce à la consigne, il nous reste plus qu’à le dechiffrer avec un site comme dCode :
+
+
+
+Voici le flag !
+
+    </summary>
+  
+
+  </entry>
 
 </feed>
 

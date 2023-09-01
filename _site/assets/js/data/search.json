@@ -1,4 +1,72 @@
 [
   
+  {
+    "title": "SQL injection - Authentification",
+    "url": "/posts/sql-injection-authentification/",
+    "categories": "Root-Me, Web-Serveur",
+    "tags": "Root-Me, Web-Serveur, SQL-Injection",
+    "date": "2023-09-01 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "Etape 1 :Voici à quoi ressemble la page de login pour l’admin : On peut voir un champ de login ou potentiellement on pourrait mettre ‘admin’ et un champ password où l’on mettra le mot de passeEtape...",
+    "content": "Etape 1 :Voici à quoi ressemble la page de login pour l’admin : On peut voir un champ de login ou potentiellement on pourrait mettre ‘admin’ et un champ password où l’on mettra le mot de passeEtape 2 :Comem le dit le titre du défie, il y a une faille sql d’authentification sur la page, pour commencer on va faire l’un des tests les plus simple de faille sql :Login : ‘admin’Password : “’ or 1=1; -“On peut voir que l’injection a marché, mais ! Nous sommes connectés au user1, pour remedier à cela nous allons modifier l’injection:Etape 3 :Login : admin ‘;-Password :  “Champ aléatoire .., MAIS OBLIGER DE METTRE QUELQUE CHOSE”BINGO nous sommes connectés au compte administrateur"
+  },
+  
+  {
+    "title": "PHP - assert()",
+    "url": "/posts/php-assert/",
+    "categories": "Root-Me, Web-Serveur",
+    "tags": "Root-Me, Web-Serveur, PHP-assert()",
+    "date": "2023-09-01 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "Etape 1L’objectif est premierement d’analyser la page sur laquel on apparait.On peut voir une page simple, sans information à part une petite blague du créateur du défie :“You will never find out w...",
+    "content": "Etape 1L’objectif est premierement d’analyser la page sur laquel on apparait.On peut voir une page simple, sans information à part une petite blague du créateur du défie :“You will never find out where our secrets are located… ahahaha (Evil laugh)”Etape 2On peut voir qu’il y a une barre de navigation avec “Home“, “About“ , “Contact“, allons voir où cela mène.Voici le contenu de la page Home : Voici le contenu de la page About : Voici le contenu de la page Contact :Seulement du contenue textuelle qui change, rien de plus.Etape 3Le nom du défie est “Assert()”, assert() est souvent utilisé par les développeur, cela permet d’avoir le retour de leur code avec les erreurs pour corriger.Essayons d’executer du code dans l’url nous verrons bien …On peut voir que la requete fonctionne bien et que nous pouvons éjéctuer des commande, par exemple la commande liste les fichiers du répertoire avec les permissions et diverse informations.mais notre objectif est d’afficher le flag, comment faire ….On peut voir que dans le retour de la commande ls -al, il y a le fichier .passwd avec une permission de lecture :Pourquoi pas essayer la commande ‘.system(“cat .passwd”).’ est regarder son résulat ??BINGO le flag est affiché sur la page !"
+  },
+  
+  {
+    "title": "OSPF-Authentification",
+    "url": "/posts/ospf-authentification/",
+    "categories": "Root-Me, Réseau",
+    "tags": "Root-Me, Réseau, OSPF-Authentification",
+    "date": "2023-09-01 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "Etape 1 :On ouvre la capture Wireshark :On peut voir que la capture a déjà était filtré, il y a que le protocole OSPF, allons voir un des paquets.Etape 2 :L’objectif est de trouver le champ OSPF da...",
+    "content": "Etape 1 :On ouvre la capture Wireshark :On peut voir que la capture a déjà était filtré, il y a que le protocole OSPF, allons voir un des paquets.Etape 2 :L’objectif est de trouver le champ OSPF dans le paquet, et de trouver diverse information sur l’authentification.Auth Type -&gt; 2 signifie que le mot de passe est sous la forme d’un hash, 1 correspond au mot de passe affiché clairement. Auth Crypt Key id -&gt; la clef porte l’id 10 sur le routeur.Auth Crypt Data Length -&gt; 16 nous permet de savoir que c’est un chiffrement MD5.Auth Crypt Sequence Number -&gt; Le numéro de la séquence d’échange.Auth Cypt Data -&gt; On peut voir le hash de la clef.Etape 3 :Maintenant que l’on à compris les champs du paquet, nous allons récupérer les informations :ettercap nous permet de traiter des paquets réseaux, -T affiche sous la form d’un texte, -q quitetr après finit le traitant, -r permet de chercher les différents mots de pas ou empreinte dans la capture.Etape 4 :On ajoute le résultat de la commande précédente dans un fichier sous cette forme :Maintenant plus qu’à casser le hash ! Pour cela on va utiliser john avec une des wordlists les plus connues, rockyou.txt.Voici le flag !"
+  },
+  
+  {
+    "title": "Encodage ASCII",
+    "url": "/posts/encodage-ascii/",
+    "categories": "Root-Me, Cryptographie",
+    "tags": "Root-Me, Cryptographie, ASCII",
+    "date": "2023-09-01 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "Etape 1 :On peut identifier que c’est un code ASCII grâce à la consigne, il nous reste plus qu’à le dechiffrer avec un site comme dCode :Voici le flag !",
+    "content": "Etape 1 :On peut identifier que c’est un code ASCII grâce à la consigne, il nous reste plus qu’à le dechiffrer avec un site comme dCode :Voici le flag !"
+  }
+  
 ]
 
