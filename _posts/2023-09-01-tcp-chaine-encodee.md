@@ -40,3 +40,4 @@ print(flag)
 
 # Fermeture de la connexion au serveur
 sock.close()
+```

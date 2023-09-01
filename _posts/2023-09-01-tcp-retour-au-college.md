@@ -46,3 +46,4 @@ print(reponse)
 
 # Fermeture de la connexion au serveur
 soc.close()
+```
