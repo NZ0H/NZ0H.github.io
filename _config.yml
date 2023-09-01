@@ -20,7 +20,7 @@ timezone: Europe/Paris
 
 title: NZ0H # the main title
 
-tagline: Test # it will display as the sub-title
+tagline: Etudiant en deuxième année de BUT R&T # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Test
@@ -29,7 +29,7 @@ description: >- # used by seo meta and the atom feed
 url: "https://NZ0H.github.io"
 
 github:
-  username: github_username # change to your github username
+  username: NZ0H # change to your github username
 
 twitter:
   username: twitter_username # change to your twitter username
@@ -42,7 +42,7 @@ social:
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/username # change to your github homepage
+    - https://github.com/NZ0H # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -76,7 +76,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: https://i.pinimg.com/1200x/23/ff/87/23ff87de89ef06b0eea45a2234b0f8c1.jpg
 
 # boolean type, the global switch for TOC in posts.
 toc: true
