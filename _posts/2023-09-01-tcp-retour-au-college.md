@@ -33,7 +33,7 @@ receive = soc.recv(1024).decode()
 n1, n2, n3 = re.findall(r'\d+', receive)
 
 # Initialisation du calcul dans une variable, racine de n1 * n2
-# Résultat sous forme d'une chaîne de caractères et le résultat est arrondie à 2 chiffres après la virgule
+# Résultat sous forme d'une chaîne de caractères et le résultat est arrondi à 2 chiffres après la virgule
 value = str(round((math.sqrt(int(n2))) * (int(n3)), 2))
 
 # Envoi du calcul au serveur
@@ -46,4 +46,3 @@ print(reponse)
 
 # Fermeture de la connexion au serveur
 soc.close()
-```
