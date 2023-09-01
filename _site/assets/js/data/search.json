@@ -1,6 +1,57 @@
 [
   
   {
+    "title": "TCP - Retour au collège",
+    "url": "/posts/tcp-retour-au-college/",
+    "categories": "Root-Me, Programmation",
+    "tags": "Root-Me, Programmation, TCP",
+    "date": "2023-09-01 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "# Importation des différentes bibliothèques utiliséesimport socketimport structimport mathimport re# Initialisation des paramètres de connexionHOTE = 'challenge01.root-me.org'PORT = 52002# Création...",
+    "content": "# Importation des différentes bibliothèques utiliséesimport socketimport structimport mathimport re# Initialisation des paramètres de connexionHOTE = 'challenge01.root-me.org'PORT = 52002# Création de la socketsoc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)# Connexion au serveursoc.connect((HOTE, PORT))print(\"Vous êtes bien connecté au serveur.\\n\")# Réception des données envoyées par le serveurreceive = soc.recv(1024).decode()# Récupération des valeurs dans le texte envoyé : n1 -&gt; 2 (pour les deux secondes)# n2 et n3 sont les valeurs générées aléatoirement par le serveurn1, n2, n3 = re.findall(r'\\d+', receive)# Initialisation du calcul dans une variable, racine de n1 * n2# Résultat sous forme d'une chaîne de caractères et le résultat est arrondie à 2 chiffres après la virgulevalue = str(round((math.sqrt(int(n2))) * (int(n3)), 2))# Envoi du calcul au serveursoc.send(value.encode())soc.send(receive.encode())reponse = soc.recv(1024).decode()# Affichage de la réponseprint(reponse)# Fermeture de la connexion au serveursoc.close()"
+  },
+  
+  {
+    "title": "TCP - Le roue romaine",
+    "url": "/posts/tcp-la-roue-romaine/",
+    "categories": "Root-Me, Programmation",
+    "tags": "Root-Me, Programmation, TCP",
+    "date": "2023-09-01 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "# Importation des différentes bibliothèques utiliséesimport socket import base64# Initialisation des paramètres de connexionHOTE = 'challenge01.root-me.org'PORT = 52023# Création de la socketsock =...",
+    "content": "# Importation des différentes bibliothèques utiliséesimport socket import base64# Initialisation des paramètres de connexionHOTE = 'challenge01.root-me.org'PORT = 52023# Création de la socketsock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)# Connexion au serveursock.connect((HOTE, PORT))print(\"Vous êtes bien connecté au serveur.\\n\")# Réception des données envoyées par le serveurreceive = sock.recv(1024).decode()v = receive.split(\"'\")reponse = base64.b64decode(v[1])# Envoi des caractères décodéssock.send(reponse)sock.send(receive.encode())flag = sock.recv(1024).decode()# Affichage du flagprint(flag)# Fermeture de la connexion au serveursock.close()"
+  },
+  
+  {
+    "title": "TCP - Chaîne encodée",
+    "url": "/posts/tcp-chaine-encodee/",
+    "categories": "Root-Me, Programmation",
+    "tags": "Root-Me, Programmation, TCP",
+    "date": "2023-09-01 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "# Importation des différentes bibliothèques utiliséesimport socket import codecs # Initialisation des paramètres de connexionHÔTE = 'challenge01.root-me.org'PORT = 52021# Création de la socketsock ...",
+    "content": "# Importation des différentes bibliothèques utiliséesimport socket import codecs # Initialisation des paramètres de connexionHÔTE = 'challenge01.root-me.org'PORT = 52021# Création de la socketsock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)# Connexion au serveursock.connect((HÔTE, PORT))print(\"Vous êtes bien connecté au serveur.\\n\")# Réception des données envoyées par le serveurreceive = sock.recv(1024).decode()v = receive.split(\"'\")reponse = codecs.decode(v[1], 'rot_13')# Envoi des caractères décodéssock.send(reponse.encode())sock.send(receive.encode())flag = sock.recv(1024).decode()# Affichage du flagprint(flag)# Fermeture de la connexion au serveursock.close()"
+  },
+  
+  {
     "title": "SQL injection - Authentification",
     "url": "/posts/sql-injection-authentification/",
     "categories": "Root-Me, Web-Serveur",
