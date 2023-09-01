@@ -103,6 +103,23 @@
   },
   
   {
+    "title": "Telnet sur commutateur",
+    "url": "/posts/mise-en-place-commutateur-telnet/",
+    "categories": "Cours, Cours Réseau",
+    "tags": "Cours, Commutateur, Telnet",
+    "date": "2023-09-01 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "Configuration d’une authentification telnet :Switch&gt; enableSwitch# configure terminalSwitch(config)# username 'identifiant' secret 'mot de passe'Switch(config)# line vty 0 15Switch(config-line)#...",
+    "content": "Configuration d’une authentification telnet :Switch&gt; enableSwitch# configure terminalSwitch(config)# username 'identifiant' secret 'mot de passe'Switch(config)# line vty 0 15Switch(config-line)# transport input telnetSwitch(config-line)# login localSwitch(config-line)# exitSwitch(config)# endTelnet est un protocole peu fiable, les échanges ne sont pas chiffré (donc vulnérable à l’attaque Man In The Middle)."
+  },
+  
+  {
     "title": "Encodage ASCII",
     "url": "/posts/encodage-ascii/",
     "categories": "Root-Me, Cryptographie",
@@ -117,6 +134,23 @@
     
     "snippet": "Etape 1 :On peut identifier que c’est un code ASCII grâce à la consigne, il nous reste plus qu’à le dechiffrer avec un site comme dCode :Voici le flag !",
     "content": "Etape 1 :On peut identifier que c’est un code ASCII grâce à la consigne, il nous reste plus qu’à le dechiffrer avec un site comme dCode :Voici le flag !"
+  },
+  
+  {
+    "title": "VLAN sur commutateur",
+    "url": "/posts/creation-vlan-commutateur/",
+    "categories": "Cours, Cours Réseau",
+    "tags": "Cours, Commutateur, VLAN",
+    "date": "2023-09-01 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "Nous allons créer 3 vlans :            Vlan      Interfaces      Adresse IP                  vlan 2      Fa0/0-9      192.168.2.1              vlan 3      Fa0/10-19      192.168.3.1              vl...",
+    "content": "Nous allons créer 3 vlans :            Vlan      Interfaces      Adresse IP                  vlan 2      Fa0/0-9      192.168.2.1              vlan 3      Fa0/10-19      192.168.3.1              vlan 7      Fa0/20-24      192.168.7.1      // Attribution des privilegesSwitch&gt; enableSwitch# configure terminal// Création des vlansSwitch(config)# vlan 2Switch(config-vlan)# name VLAN2Switch(config)# vlan 3Switch(config-vlan)# name VLAN3Switch(config)# vlan 7Switch(config-vlan)# name VLAN7// Configuration IP des interfaces des vlansSwitch(config)# interface vlan 2Switch(config-if)# ip address 192.168.2.1 255.255.255.0Switch(config-if)# no shutdownSwitch(config-if)# exitSwitch(config)# interface vlan 3Switch(config-if)# ip address 192.168.3.1 255.255.255.0Switch(config-if)# no shutdownSwitch(config-if)# exitSwitch(config)# interface vlan 7Switch(config-if)# ip address 192.168.7.1 255.255.255.0Switch(config-if)# no shutdownSwitch(config-if)# exit// Attribution des interfaces aux vlansSwitch(config)# interface range FastEthernet0/0 - 9Switch(config-if-range)# switchport mode accessSwitch(config-if-range)# switchport access vlan 2Switch(config-if-range)# no shutdownSwitch(config-if-range)# exitSwitch(config)# interface range FastEthernet0/10 - 19Switch(config-if-range)# switchport mode accessSwitch(config-if-range)# switchport access vlan 3Switch(config-if-range)# no shutdownSwitch(config-if-range)# exitSwitch(config)# interface range FastEthernet0/20 - 24Switch(config-if-range)# switchport mode accessSwitch(config-if-range)# switchport access vlan 7Switch(config-if-range)# no shutdownSwitch(config-if-range)# exit// Création d'un mode trunk sur l'interface Fa0/24Switch(config)# interface FastEthernet0/24Switch(config-if)# switchport mode trunkSwitch(config-if)# switchport trunk native vlan 7Switch(config-if)# switchport trunk allowed vlan 7Switch(config-if)# no shutdownSwitch(config-if)# exitSwitch(config)# end"
   }
   
 ]
