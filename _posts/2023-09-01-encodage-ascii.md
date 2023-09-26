@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Encodage ASCII
+title: Encodage - ASCII
 date: 2023-09-01
 author: NZ0H
 categories: [Root-Me, Cryptographie]

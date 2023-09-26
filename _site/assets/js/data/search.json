@@ -1,6 +1,261 @@
 [
   
   {
+    "title": "Telnet-Authentification",
+    "url": "/posts/telnet-authentification/",
+    "categories": "Root-Me, Réseau",
+    "tags": "Root-Me, Réseau, Telnet-Authentification, Telnet",
+    "date": "2023-09-05 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "On télécharge le défi, après avoir téléchargé le défi, nous l’onvrons avec Wireshark :Nous pouvons voir un échange Telnet qui a était capturé, le paquet transit grace au protocole TCP.Wireshark a u...",
+    "content": "On télécharge le défi, après avoir téléchargé le défi, nous l’onvrons avec Wireshark :Nous pouvons voir un échange Telnet qui a était capturé, le paquet transit grace au protocole TCP.Wireshark a une option permettant de visualiser l’ensemble du trafic transporté via le protocole TCP, pour cela nous faisons un clique droit dans la console en bas:Voici le résultat :Nous avons trouvé le flag ! (ligne “Password”)"
+  },
+  
+  {
+    "title": "Mise en place de Spanning-Tree",
+    "url": "/posts/spannig-tree/",
+    "categories": "Cours, Cours Réseau",
+    "tags": "Cours, Spanning-Tree",
+    "date": "2023-09-05 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "",
+    "content": ""
+  },
+  
+  {
+    "title": "Mise en place de RipV2",
+    "url": "/posts/ripv2/",
+    "categories": "Cours, Cours Réseau",
+    "tags": "Cours, RipV2",
+    "date": "2023-09-05 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "Qu’est ce que RipV2 ?Comment le mettre en place ?Configuration de RipV2ExempleComment vérifier son fonctionnement ?",
+    "content": "Qu’est ce que RipV2 ?Comment le mettre en place ?Configuration de RipV2ExempleComment vérifier son fonctionnement ?"
+  },
+  
+  {
+    "title": "Mise en place de OSPF",
+    "url": "/posts/ospf/",
+    "categories": "Cours, Cours Réseau",
+    "tags": "Cours, OSPF",
+    "date": "2023-09-05 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "Qu’est ce que OSPF ?Comment le mettre en place ?Configuration de OSPFExempleComment vérifier son fonctionnement ?",
+    "content": "Qu’est ce que OSPF ?Comment le mettre en place ?Configuration de OSPFExempleComment vérifier son fonctionnement ?"
+  },
+  
+  {
+    "title": "Inter-VLAN",
+    "url": "/posts/inter-vlan/",
+    "categories": "Cours, Cours Réseau",
+    "tags": "Cours, Inter-VLAN",
+    "date": "2023-09-05 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "Qu’est ce que le routage inter-vlan ?Comment le mettre en place ?RouteurExempleCommutateur de couche 3ExempleComment vérifier son fonctionnement ?",
+    "content": "Qu’est ce que le routage inter-vlan ?Comment le mettre en place ?RouteurExempleCommutateur de couche 3ExempleComment vérifier son fonctionnement ?"
+  },
+  
+  {
+    "title": "La translation d'adresse NAT/PAT",
+    "url": "/posts/NAT-PAT/",
+    "categories": "Cours, Cours Réseau",
+    "tags": "Cours, PAT, NAT, WAN",
+    "date": "2023-09-05 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "Qu’est ce que le NAT ?NAT StatiqueExplication du NAT StatiqueUtilisation : Le NAT statique consiste à associer une adresse IP publique à une adresse IP privée de manière permanente et unidirectionn...",
+    "content": "Qu’est ce que le NAT ?NAT StatiqueExplication du NAT StatiqueUtilisation : Le NAT statique consiste à associer une adresse IP publique à une adresse IP privée de manière permanente et unidirectionnelle. Il est principalement utilisé lorsque vous disposez d'un serveur sur votre réseau privé que vous souhaitez rendre accessible depuis Internet, comme un serveur web ou un serveur de messagerie.Avantages : Cela permet d'offrir un accès permanent et prévisible au serveur sans modification de l'adresse IP publique.NAT DynamiqueExplication du NAT DynmaiqueUtilisation : Le NAT dynamique attribue temporairement une adresse IP publique à un périphérique privé lorsqu'il se connecte à Internet. C'est le type de NAT le plus couramment utilisé dans les foyers et les petites entreprises pour économiser des adresses IP publiques.Avantages : Il est plus efficace en termes d'utilisation des adresses IP publiques, car il attribue dynamiquement des adresses lorsque nécessaire.NAT de Surcharge (ou PAT)Explication du PATUtilisation : Le NAT de surcharge est une forme de NAT dynamique où plusieurs périphériques privés partagent la même adresse IP publique, mais avec des numéros de port différents. Il est souvent utilisé dans les environnements où l'adressage IP public est limité.Avantages : Il permet à plusieurs périphériques de partager une seule adresse IP publique, ce qui réduit la consommation d'adresses IP publiques.Comment le mettre en place ?Mise en place d’un NAT Statique# - Définir l’interface interne et l’interface externeRouter(config)# interface &lt;type int interne&gt;Router(config-if)# ip nat inside Router(config)# interface &lt;type int externe&gt;Router(config-if)# ip nat outside# - Créer l’association entre les adresses locales internes et les adresses globales internesRouter(config)# ip nat inside source static &lt;protocol&gt; &lt;ip-locale&gt; &lt;port-locale&gt; &lt;ip-globale&gt; &lt;port-global&gt;ExempleMise en place d’un NAT Dynamique# - Définir l’interface interne et l’interface externeRouter(config)# interface &lt;type int interne&gt;Router(config-if)# ip nat inside Router(config)# interface &lt;type int externe&gt;Router(config-if)# ip nat outside# - Définir une plage d'adresse globaleRouter(config)# ip nat &lt;nom-liste&gt; &lt;ip-début&gt; &lt;ip-fin&gt; netmask &lt;masque réseau de la plage d adresse globale&gt;# - Définir une liste d'adresse autorisées à être traduiteRouter(config)# access-list &lt;numéro-liste&gt; permit &lt;ip-réseau&gt; &lt;masque-inversé&gt;# - Traduction de la liste des IP (locale) autorisées à obtenir une adresse globaleRouter(config)# ip nat inside source list &lt;numéro-liste&gt; pool &lt;nom-pool&gt;Exemple :Mise en place d’un PAT :# - Définir l’interface interne et l’interface externeRouter(config)# interface &lt;type int interne&gt;Router(config-if)# ip nat inside Router(config)# interface &lt;type int externe&gt;Router(config-if)# ip nat outside# - Définir une liste des adresses autorisées à être traduites.Router(config)# access-list &lt;numéro-liste&gt; permit source &lt;ip réseau&gt; &lt;masque-inversé&gt;# - Etablir une traduction dynamique pour une IP publique uniqueRouter(config)# ip nat inside source list &lt;numéro-liste&gt; interface &lt;nom-interface&gt; overload# - Etablir une traduction dynamique pour un pool d’IP publiquesRouter(config)# ip nat inside source list &lt;numéro-listes&gt; pool &lt;nom-pool&gt; overloadExemple :Les commandes de vérification du NAT :# -  Vérifications et statistiques# -- Affiche une liste des traductions NAT actives sur le routeurRouteur# show ip nat translations# -- Affiche une liste des traductions NAT actives sur le routeur avec plus de détailsRouteur# show ip nat translations verbose# -- Affiche des statistiques globales liées à l'utilisation de la translation d'adresses réseau sur le routeur.Routeur# show ip nat statistics# - Effacement de la table NATRouteur# clear ip nat translations *# - Debogage NATRouteur# debug ip nat"
+  },
+  
+  {
+    "title": "Cheat Sheet PostgreSQL",
+    "url": "/posts/postgresql/",
+    "categories": "Cours, PostgreSQL",
+    "tags": "Cours, SQL, PostgreSQL",
+    "date": "2023-09-04 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "Connexion-- si nous sommes connectée en root nous pouvons nous connecter directement comme ça :psql -- Pour se connecter en local :psql -U &lt;username&gt; -d &lt;database&gt; -h &lt;hostname&gt;ps...",
+    "content": "Connexion-- si nous sommes connectée en root nous pouvons nous connecter directement comme ça :psql -- Pour se connecter en local :psql -U &lt;username&gt; -d &lt;database&gt; -h &lt;hostname&gt;psql --username=&lt;username&gt; --dbname=&lt;database&gt; --host=&lt;hostname&gt;Deconnexion\\qManipulation\tde base de donnéeSelectioner donnéesConditionOR-- Cette condition vérifie si l'une ou l'autre des conditions est vraie.SELECT * FROM produitsWHERE categorie = 'Électronique' OR categorie = 'Vêtements';AND-- Cette condition vérifie si toutes les conditions sont vraies.SELECT * FROM employesWHERE age &gt;= 30 AND departement = 'Ressources humaines';&gt;-- Cette condition vérifie si une valeur est supérieure à une autre.SELECT * FROM commandesWHERE montant_total &gt; 1000;&lt;-- Cette condition vérifie si une valeur est inférieure à une autre.SELECT * FROM produitsWHERE prix &lt; 50;&lt;= ou =&gt;-- Cette condition vérifie si une valeur est inférieure ou égale à / supérieure ou égale à une autre.SELECT * FROM etudiantsWHERE moyenne &gt;= 10 OR moyenne &lt;= 5;JointureSimple jointure-- Les jointures permettent de combiner des données de plusieurs tables en fonction de certaines conditions.SELECT commandes.commande_id, clients.nomFROM commandesINNER JOIN clients ON commandes.client_id = clients.client_id;Double jointure-- Dans cet exemple, nous effectuons une double jointure entre trois tables : table_1, table_2 et table_3.-- Nous utilisons INNER JOIN pour ne récupérer que les lignes correspondantes dans toutes les tables.SELECT table_1.colonne_1, table_2.colonne_2, table_3.colonne_3FROM table_1INNER JOIN table_2 ON table_1.id = table_2.idINNER JOIN table_3 ON table_2.id = table_3.id;Triple jointure-- Dans cet exemple, nous effectuons une triple jointure entre quatre tables : table_1, table_2, table_3 et table_4.-- Nous utilisons INNER JOIN pour ne récupérer que les lignes correspondantes dans toutes les tables.SELECT table_1.colonne_1, table_2.colonne_2, table_3.colonne_3, table_4.colonne_4FROM table_1INNER JOIN table_2 ON table_1.id = table_2.idINNER JOIN table_3 ON table_2.id = table_3.idINNER JOIN table_4 ON table_3.id = table_4.id;Le principe est le même si il y a plus de jointure à faire…Manipulation de tableCréer une table-- Créer une nouvelle tableCREATE TABLE nom_de_la_table (    colonne1 type_de_données,    colonne2 type_de_données,    ...);Modifier une tableAjouter une colonne à une table-- Ajouter une colonne à une table existanteALTER TABLE nom_de_la_tableADD nom_de_la_colonne type_de_données;Supprimer une colonne d’une tableALTER TABLE nom_de_la_tableDROP COLUMN nom_de_la_colonne;Modifier le type de donnée d’une table-- Modifier le type de données d'une colonneALTER TABLE nom_de_la_tableALTER COLUMN nom_de_la_colonne TYPE nouveau_type_de_données;Renommer une table-- Renommer une tableALTER TABLE nom_de_la_tableRENAME TO nouveau_nom_de_la_table;Supprimer une table-- Supprimer une tableDROP TABLE nom_de_la_table;PermissionsDevenir utilisateur PostgreSQL, en cas d’erreurs de permission :sudo su - postgrespsqlAccorder toutes les permissions sur la base de données :GRANT ALL PRIVILEGES ON DATABASE &lt;db_name&gt; TO &lt;user_name&gt;;Accorder les permissions de connexion à la base de données :GRANT CONNECT ON DATABASE &lt;db_name&gt; TO &lt;user_name&gt;;Accorder les permissions sur le schéma :GRANT USAGE ON SCHEMA public TO &lt;user_name&gt;;Accorder les permissions pour exécuter les fonctions :GRANT EXECUTE ON ALL FUNCTIONS IN SCHEMA public TO &lt;user_name&gt;;Accorder les permissions pour sélectionner, mettre à jour, insérer, supprimer sur toutes les tables :GRANT SELECT, UPDATE, INSERT, DELETE ON ALL TABLES IN SCHEMA public TO &lt;user_name&gt;;Accorder les permissions sur une table spécifique :GRANT SELECT, UPDATE, INSERT ON &lt;table_name&gt; TO &lt;user_name&gt;;Accorder les permissions de sélection sur toutes les tables dans le schéma public :GRANT SELECT ON ALL TABLES IN SCHEMA public TO &lt;user_name&gt;;"
+  },
+  
+  {
+    "title": "Cheat Sheet Mysql",
+    "url": "/posts/mysql/",
+    "categories": "Cours, Mysql",
+    "tags": "Cours, SQL, MYSQL",
+    "date": "2023-09-04 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "A venir",
+    "content": "A venir"
+  },
+  
+  {
+    "title": "Montage d'un serveur NFS (local)",
+    "url": "/posts/serveur-nfs-local/",
+    "categories": "Cours, Mise en place de service",
+    "tags": "Cours, NFS",
+    "date": "2023-09-03 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "A venir",
+    "content": "A venir"
+  },
+  
+  {
+    "title": "Montage d'un serveur FTP (local)",
+    "url": "/posts/serveur-ftp-local/",
+    "categories": "Cours, Mise en place de service",
+    "tags": "Cours, FTP",
+    "date": "2023-09-03 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "A venir",
+    "content": "A venir"
+  },
+  
+  {
+    "title": "Montage d'un serveur DNS (local)",
+    "url": "/posts/serveur-dns-local/",
+    "categories": "Cours, Mise en place de service",
+    "tags": "Cours, DNS",
+    "date": "2023-09-03 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "A venir",
+    "content": "A venir"
+  },
+  
+  {
+    "title": "Montage d'un serveur DHCP (local)",
+    "url": "/posts/serveur-dhcp-local/",
+    "categories": "Cours, Mise en place de service",
+    "tags": "Cours, DHCP",
+    "date": "2023-09-03 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "A venir",
+    "content": "A venir"
+  },
+  
+  {
+    "title": "Montage d'un serveur WEB (local)",
+    "url": "/posts/serveur-apache-local/",
+    "categories": "Cours, Mise en place de service",
+    "tags": "Cours, Apache, WEB",
+    "date": "2023-09-03 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "A venir",
+    "content": "A venir"
+  },
+  
+  {
+    "title": "Encodage - UU",
+    "url": "/posts/encodage-uu/",
+    "categories": "Root-Me, Cryptographie",
+    "tags": "Root-Me, Cryptographie, UU",
+    "date": "2023-09-03 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "Etape 1 :On peut identifier que c’est de l’encodage UU grâce à la consigne, il nous reste plus qu’à le dechiffrer avec un site comme dCode :Voici le flag !",
+    "content": "Etape 1 :On peut identifier que c’est de l’encodage UU grâce à la consigne, il nous reste plus qu’à le dechiffrer avec un site comme dCode :Voici le flag !"
+  },
+  
+  {
+    "title": "ETHERNET-trame",
+    "url": "/posts/ETHERNET-trame/",
+    "categories": "Root-Me, Réseau",
+    "tags": "Root-Me, Réseau, ETHERNET-trame",
+    "date": "2023-09-01 00:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "",
+    "content": ""
+  },
+  
+  {
     "title": "TCP - Retour au collège",
     "url": "/posts/tcp-retour-au-college/",
     "categories": "Root-Me, Programmation",
@@ -115,12 +370,12 @@
 
 
     
-    "snippet": "Configuration d’une authentification telnet :Switch&gt; enableSwitch# configure terminalSwitch(config)# username 'identifiant' secret 'mot de passe'Switch(config)# line vty 0 15Switch(config-line)#...",
-    "content": "Configuration d’une authentification telnet :Switch&gt; enableSwitch# configure terminalSwitch(config)# username 'identifiant' secret 'mot de passe'Switch(config)# line vty 0 15Switch(config-line)# transport input telnetSwitch(config-line)# login localSwitch(config-line)# exitSwitch(config)# endTelnet est un protocole peu fiable, les échanges ne sont pas chiffré (donc vulnérable à l’attaque Man In The Middle)."
+    "snippet": "Configuration d’une authentification telnet :Switch&gt; enableSwitch# configure terminalSwitch(config)# username 'identifiant' secret 'mot de passe'Switch(config)# line vty 0 4Switch(config-line)# ...",
+    "content": "Configuration d’une authentification telnet :Switch&gt; enableSwitch# configure terminalSwitch(config)# username 'identifiant' secret 'mot de passe'Switch(config)# line vty 0 4Switch(config-line)# transport input telnetSwitch(config-line)# login localSwitch(config-line)# exitSwitch(config)# endTelnet est un protocole peu fiable, les échanges ne sont pas chiffré (donc vulnérable à l’attaque Man In The Middle)."
   },
   
   {
-    "title": "Encodage ASCII",
+    "title": "Encodage - ASCII",
     "url": "/posts/encodage-ascii/",
     "categories": "Root-Me, Cryptographie",
     "tags": "Root-Me, Cryptographie, ASCII",
@@ -150,7 +405,7 @@
 
     
     "snippet": "Nous allons créer 3 vlans :            Vlan      Interfaces      Adresse IP                  vlan 2      Fa0/0-9      192.168.2.1              vlan 3      Fa0/10-19      192.168.3.1              vl...",
-    "content": "Nous allons créer 3 vlans :            Vlan      Interfaces      Adresse IP                  vlan 2      Fa0/0-9      192.168.2.1              vlan 3      Fa0/10-19      192.168.3.1              vlan 7      Fa0/20-24      192.168.7.1      // Attribution des privilegesSwitch&gt; enableSwitch# configure terminal// Création des vlansSwitch(config)# vlan 2Switch(config-vlan)# name VLAN2Switch(config)# vlan 3Switch(config-vlan)# name VLAN3Switch(config)# vlan 7Switch(config-vlan)# name VLAN7// Configuration IP des interfaces des vlansSwitch(config)# interface vlan 2Switch(config-if)# ip address 192.168.2.1 255.255.255.0Switch(config-if)# no shutdownSwitch(config-if)# exitSwitch(config)# interface vlan 3Switch(config-if)# ip address 192.168.3.1 255.255.255.0Switch(config-if)# no shutdownSwitch(config-if)# exitSwitch(config)# interface vlan 7Switch(config-if)# ip address 192.168.7.1 255.255.255.0Switch(config-if)# no shutdownSwitch(config-if)# exit// Attribution des interfaces aux vlansSwitch(config)# interface range FastEthernet0/0 - 9Switch(config-if-range)# switchport mode accessSwitch(config-if-range)# switchport access vlan 2Switch(config-if-range)# no shutdownSwitch(config-if-range)# exitSwitch(config)# interface range FastEthernet0/10 - 19Switch(config-if-range)# switchport mode accessSwitch(config-if-range)# switchport access vlan 3Switch(config-if-range)# no shutdownSwitch(config-if-range)# exitSwitch(config)# interface range FastEthernet0/20 - 24Switch(config-if-range)# switchport mode accessSwitch(config-if-range)# switchport access vlan 7Switch(config-if-range)# no shutdownSwitch(config-if-range)# exit// Création d'un mode trunk sur l'interface Fa0/24Switch(config)# interface FastEthernet0/24Switch(config-if)# switchport mode trunkSwitch(config-if)# switchport trunk native vlan 7Switch(config-if)# switchport trunk allowed vlan 7Switch(config-if)# no shutdownSwitch(config-if)# exitSwitch(config)# end"
+    "content": "Nous allons créer 3 vlans :            Vlan      Interfaces      Adresse IP                  vlan 2      Fa0/0-9      192.168.2.1              vlan 3      Fa0/10-19      192.168.3.1              vlan 7      Fa0/20-24      192.168.7.1      // Attribution des privilegesSwitch&gt; enableSwitch# configure terminal// Création des vlansSwitch(config)# vlan 2Switch(config-vlan)# name VLAN2Switch(config)# vlan 3Switch(config-vlan)# name VLAN3Switch(config)# vlan 7Switch(config-vlan)# name VLAN7// Configuration IP des interfaces des vlansSwitch(config)# interface vlan 2Switch(config-if)# ip address 192.168.2.1 255.255.255.0Switch(config-if)# no shutdownSwitch(config-if)# exitSwitch(config)# interface vlan 3Switch(config-if)# ip address 192.168.3.1 255.255.255.0Switch(config-if)# no shutdownSwitch(config-if)# exitSwitch(config)# interface vlan 7Switch(config-if)# ip address 192.168.7.1 255.255.255.0Switch(config-if)# no shutdownSwitch(config-if)# exit// Attribution des interfaces aux vlansSwitch(config)# interface range FastEthernet0/0-9Switch(config-if-range)# switchport mode accessSwitch(config-if-range)# switchport access vlan 2Switch(config-if-range)# no shutdownSwitch(config-if-range)# exitSwitch(config)# interface range FastEthernet0/10-19Switch(config-if-range)# switchport mode accessSwitch(config-if-range)# switchport access vlan 3Switch(config-if-range)# no shutdownSwitch(config-if-range)# exitSwitch(config)# interface range FastEthernet0/20-24Switch(config-if-range)# switchport mode accessSwitch(config-if-range)# switchport access vlan 7Switch(config-if-range)# no shutdownSwitch(config-if-range)# exit// Création d'un mode trunk sur l'interface Fa0/24Switch(config)# interface FastEthernet0/24Switch(config-if)# switchport mode trunkSwitch(config-if)# switchport trunk native vlan 7Switch(config-if)# switchport trunk allowed vlan 7Switch(config-if)# no shutdownSwitch(config-if)# exitSwitch(config)# end"
   }
   
 ]

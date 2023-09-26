@@ -48,19 +48,19 @@ Switch(config-if)# no shutdown
 Switch(config-if)# exit
 
 // Attribution des interfaces aux vlans
-Switch(config)# interface range FastEthernet0/0 - 9
+Switch(config)# interface range FastEthernet0/0-9
 Switch(config-if-range)# switchport mode access
 Switch(config-if-range)# switchport access vlan 2
 Switch(config-if-range)# no shutdown
 Switch(config-if-range)# exit
 
-Switch(config)# interface range FastEthernet0/10 - 19
+Switch(config)# interface range FastEthernet0/10-19
 Switch(config-if-range)# switchport mode access
 Switch(config-if-range)# switchport access vlan 3
 Switch(config-if-range)# no shutdown
 Switch(config-if-range)# exit
 
-Switch(config)# interface range FastEthernet0/20 - 24
+Switch(config)# interface range FastEthernet0/20-24
 Switch(config-if-range)# switchport mode access
 Switch(config-if-range)# switchport access vlan 7
 Switch(config-if-range)# no shutdown

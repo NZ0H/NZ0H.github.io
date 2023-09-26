@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>NZ0H</title>
   <subtitle>Etudiant en deuxième année de BUT R&amp;T</subtitle>
-  <updated>2023-09-01T22:49:01+02:00</updated>
+  <updated>2023-09-11T19:42:15+02:00</updated>
   <author>
     <name>Enzo</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,14 @@
 
   
   <entry>
-    <title>TCP - Retour au collège</title>
-    <link href="http://localhost:4000/posts/tcp-retour-au-college/" rel="alternate" type="text/html" title="TCP - Retour au collège" />
-    <published>2023-09-01T00:00:00+02:00</published>
+    <title>Telnet-Authentification</title>
+    <link href="http://localhost:4000/posts/telnet-authentification/" rel="alternate" type="text/html" title="Telnet-Authentification" />
+    <published>2023-09-05T00:00:00+02:00</published>
   
-    <updated>2023-09-01T18:43:35+02:00</updated>
+    <updated>2023-09-05T00:00:00+02:00</updated>
   
-    <id>http://localhost:4000/posts/tcp-retour-au-college/</id>
-    <content src="http://localhost:4000/posts/tcp-retour-au-college/" />
+    <id>http://localhost:4000/posts/telnet-authentification/</id>
+    <content src="http://localhost:4000/posts/telnet-authentification/" />
     <author>
       <name>NZ0H</name>
     </author>
@@ -36,7 +36,7 @@
     
     <category term="Root-Me" />
     
-    <category term="Programmation" />
+    <category term="Réseau" />
     
   
 
@@ -48,24 +48,21 @@
 
 
 
-      # Importation des différentes bibliothèques utilisées
-import socket
-import struct
-import math
-import re
+      On télécharge le défi, après avoir téléchargé le défi, nous l’onvrons avec Wireshark :
 
-# Initialisation des paramètres de connexion
-HOTE = 'challenge01.root-me.org'
-PORT = 52002
 
-# Création de la socket
-soc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-# Connexion au serveur
-soc.connect((HOTE, PORT))
-print("Vous êtes bien connecté au serveur.\n")
+Nous pouvons voir un échange Telnet qui a était capturé, le paquet transit grace au protocole TCP.
 
-# Réception des donnée...
+Wireshark a une option permettant de visualiser l’ensemble du trafic transporté via le protocole TCP, pour cela nous faisons un clique droit dans la console en bas:
+
+
+
+Voici le résultat :
+
+
+
+Nous avons trouv...
     </summary>
   
 
@@ -73,23 +70,23 @@ print("Vous êtes bien connecté au serveur.\n")
 
   
   <entry>
-    <title>TCP - Le roue romaine</title>
-    <link href="http://localhost:4000/posts/tcp-la-roue-romaine/" rel="alternate" type="text/html" title="TCP - Le roue romaine" />
-    <published>2023-09-01T00:00:00+02:00</published>
+    <title>Mise en place de Spanning-Tree</title>
+    <link href="http://localhost:4000/posts/spannig-tree/" rel="alternate" type="text/html" title="Mise en place de Spanning-Tree" />
+    <published>2023-09-05T00:00:00+02:00</published>
   
-    <updated>2023-09-01T18:43:35+02:00</updated>
+    <updated>2023-09-05T00:00:00+02:00</updated>
   
-    <id>http://localhost:4000/posts/tcp-la-roue-romaine/</id>
-    <content src="http://localhost:4000/posts/tcp-la-roue-romaine/" />
+    <id>http://localhost:4000/posts/spannig-tree/</id>
+    <content src="http://localhost:4000/posts/spannig-tree/" />
     <author>
       <name>NZ0H</name>
     </author>
 
   
     
-    <category term="Root-Me" />
+    <category term="Cours" />
     
-    <category term="Programmation" />
+    <category term="Cours Réseau" />
     
   
 
@@ -101,22 +98,8 @@ print("Vous êtes bien connecté au serveur.\n")
 
 
 
-      # Importation des différentes bibliothèques utilisées
-import socket 
-import base64
+      
 
-# Initialisation des paramètres de connexion
-HOTE = 'challenge01.root-me.org'
-PORT = 52023
-
-# Création de la socket
-sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-# Connexion au serveur
-sock.connect((HOTE, PORT))
-print("Vous êtes bien connecté au serveur.\n")
-
-# Réception des données envoyées par le s...
     </summary>
   
 
@@ -124,23 +107,23 @@ print("Vous êtes bien connecté au serveur.\n")
 
   
   <entry>
-    <title>TCP - Chaîne encodée</title>
-    <link href="http://localhost:4000/posts/tcp-chaine-encodee/" rel="alternate" type="text/html" title="TCP - Chaîne encodée" />
-    <published>2023-09-01T00:00:00+02:00</published>
+    <title>Mise en place de RipV2</title>
+    <link href="http://localhost:4000/posts/ripv2/" rel="alternate" type="text/html" title="Mise en place de RipV2" />
+    <published>2023-09-05T00:00:00+02:00</published>
   
-    <updated>2023-09-01T18:43:35+02:00</updated>
+    <updated>2023-09-05T00:00:00+02:00</updated>
   
-    <id>http://localhost:4000/posts/tcp-chaine-encodee/</id>
-    <content src="http://localhost:4000/posts/tcp-chaine-encodee/" />
+    <id>http://localhost:4000/posts/ripv2/</id>
+    <content src="http://localhost:4000/posts/ripv2/" />
     <author>
       <name>NZ0H</name>
     </author>
 
   
     
-    <category term="Root-Me" />
+    <category term="Cours" />
     
-    <category term="Programmation" />
+    <category term="Cours Réseau" />
     
   
 
@@ -152,22 +135,19 @@ print("Vous êtes bien connecté au serveur.\n")
 
 
 
-      # Importation des différentes bibliothèques utilisées
-import socket 
-import codecs 
+      Qu’est ce que RipV2 ?
 
-# Initialisation des paramètres de connexion
-HÔTE = 'challenge01.root-me.org'
-PORT = 52021
+Comment le mettre en place ?
 
-# Création de la socket
-sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+Configuration de RipV2
 
-# Connexion au serveur
-sock.connect((HÔTE, PORT))
-print("Vous êtes bien connecté au serveur.\n")
 
-# Réception des données envoyées par le ...
+Exemple
+
+
+
+Comment vérifier son fonctionnement ?
+
     </summary>
   
 
@@ -175,23 +155,23 @@ print("Vous êtes bien connecté au serveur.\n")
 
   
   <entry>
-    <title>SQL injection - Authentification</title>
-    <link href="http://localhost:4000/posts/sql-injection-authentification/" rel="alternate" type="text/html" title="SQL injection - Authentification" />
-    <published>2023-09-01T00:00:00+02:00</published>
+    <title>Mise en place de OSPF</title>
+    <link href="http://localhost:4000/posts/ospf/" rel="alternate" type="text/html" title="Mise en place de OSPF" />
+    <published>2023-09-05T00:00:00+02:00</published>
   
-    <updated>2023-09-01T00:00:00+02:00</updated>
+    <updated>2023-09-05T00:00:00+02:00</updated>
   
-    <id>http://localhost:4000/posts/sql-injection-authentification/</id>
-    <content src="http://localhost:4000/posts/sql-injection-authentification/" />
+    <id>http://localhost:4000/posts/ospf/</id>
+    <content src="http://localhost:4000/posts/ospf/" />
     <author>
       <name>NZ0H</name>
     </author>
 
   
     
-    <category term="Root-Me" />
+    <category term="Cours" />
     
-    <category term="Web-Serveur" />
+    <category term="Cours Réseau" />
     
   
 
@@ -203,22 +183,19 @@ print("Vous êtes bien connecté au serveur.\n")
 
 
 
-      Etape 1 :
+      Qu’est ce que OSPF ?
 
-Voici à quoi ressemble la page de login pour l’admin : 
+Comment le mettre en place ?
+
+Configuration de OSPF
 
 
-On peut voir un champ de login ou potentiellement on pourrait mettre ‘admin’ et un champ password où l’on mettra le mot de passe
-
-Etape 2 :
-
-Comem le dit le titre du défie, il y a une faille sql d’authentification sur la page, pour commencer on va faire l’un des tests les plus simple de faille sql :
+Exemple
 
 
 
-Login : ‘admin’
+Comment vérifier son fonctionnement ?
 
-Passwor...
     </summary>
   
 
@@ -226,23 +203,23 @@ Passwor...
 
   
   <entry>
-    <title>PHP - assert()</title>
-    <link href="http://localhost:4000/posts/php-assert/" rel="alternate" type="text/html" title="PHP - assert()" />
-    <published>2023-09-01T00:00:00+02:00</published>
+    <title>Inter-VLAN</title>
+    <link href="http://localhost:4000/posts/inter-vlan/" rel="alternate" type="text/html" title="Inter-VLAN" />
+    <published>2023-09-05T00:00:00+02:00</published>
   
-    <updated>2023-09-01T00:00:00+02:00</updated>
+    <updated>2023-09-05T00:00:00+02:00</updated>
   
-    <id>http://localhost:4000/posts/php-assert/</id>
-    <content src="http://localhost:4000/posts/php-assert/" />
+    <id>http://localhost:4000/posts/inter-vlan/</id>
+    <content src="http://localhost:4000/posts/inter-vlan/" />
     <author>
       <name>NZ0H</name>
     </author>
 
   
     
-    <category term="Root-Me" />
+    <category term="Cours" />
     
-    <category term="Web-Serveur" />
+    <category term="Cours Réseau" />
     
   
 
@@ -254,20 +231,28 @@ Passwor...
 
 
 
-      Etape 1
+      Qu’est ce que le routage inter-vlan ?
 
-L’objectif est premierement d’analyser la page sur laquel on apparait.
+Comment le mettre en place ?
+
+Routeur
+
+
+Exemple
 
 
 
-On peut voir une page simple, sans information à part une petite blague du créateur du défie :
-“You will never find out where our secrets are located… ahahaha (Evil laugh)”
+Commutateur de couche 3
 
-Etape 2
 
-On peut voir qu’il y a une barre de navigation avec “Home“, “About“ , “Contact“, allons voir où cela mène.
 
-Voici le contenu de la ...
+Exemple
+
+
+
+Comment vérifier son fonctionnement ?
+
+
     </summary>
   
 

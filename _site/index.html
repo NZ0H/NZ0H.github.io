@@ -45,6 +45,7 @@
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="NZ0H" />
 <meta property="og:type" content="website" />
+<link rel="next" href="http://localhost:4000/page2" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="NZ0H" />
 <meta name="twitter:site" content="@twitter_username" />
@@ -590,13 +591,13 @@
 
 <div id="post-list">
   
-    <a href="/posts/tcp-retour-au-college/" class="card-wrapper">
+    <a href="/posts/telnet-authentification/" class="card-wrapper">
       <div class="card post-preview flex-md-row-reverse">
         
 
         <div class="card-body d-flex flex-column">
           <h1 class="card-title my-2 mt-md-0">
-            TCP - Retour au collège
+            Telnet-Authentification
           </h1>
 
           <div class="card-text post-content mt-0 mb-2">
@@ -607,17 +608,13 @@
 
 
 
-              # Importation des différentes bibliothèques utilisées
-import socket
-import struct
-import math
-import re
+              On télécharge le défi, après avoir téléchargé le défi, nous l’onvrons avec Wireshark :
 
-# Initialisation des paramètres de connexion
-HOTE = &#39;challenge01.root-me.org&#39;
-PORT = 52002
 
-...
+
+Nous pouvons voir un échange Telnet qui a était capturé, le paquet transit grace au protocole TCP.
+
+Wiresha...
             </p>
           </div>
 
@@ -636,364 +633,11 @@ PORT = 52002
 
 <em
   class=""
-  data-ts="1693519200"
+  data-ts="1693864800"
   data-df="ll"
   
 >
-  Sep  1, 2023
-</em>
-
-
-              <!-- categories -->
-              
-                <i class="far fa-folder-open fa-fw me-1"></i>
-                <span class="categories">
-                  
-                    Root-Me,
-                    Programmation
-                </span>
-              
-            </div>
-
-            
-          </div>
-          <!-- .post-meta -->
-        </div>
-        <!-- .card-body -->
-      </div>
-    </a>
-  
-    <a href="/posts/tcp-la-roue-romaine/" class="card-wrapper">
-      <div class="card post-preview flex-md-row-reverse">
-        
-
-        <div class="card-body d-flex flex-column">
-          <h1 class="card-title my-2 mt-md-0">
-            TCP - Le roue romaine
-          </h1>
-
-          <div class="card-text post-content mt-0 mb-2">
-            <p>
-              
-
-
-
-
-
-              # Importation des différentes bibliothèques utilisées
-import socket 
-import base64
-
-# Initialisation des paramètres de connexion
-HOTE = &#39;challenge01.root-me.org&#39;
-PORT = 52023
-
-# Création de la sock...
-            </p>
-          </div>
-
-          <div class="post-meta flex-grow-1 d-flex align-items-end">
-            <div class="me-auto">
-              <!-- posted date -->
-              <i class="far fa-calendar fa-fw me-1"></i>
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class=""
-  data-ts="1693519200"
-  data-df="ll"
-  
->
-  Sep  1, 2023
-</em>
-
-
-              <!-- categories -->
-              
-                <i class="far fa-folder-open fa-fw me-1"></i>
-                <span class="categories">
-                  
-                    Root-Me,
-                    Programmation
-                </span>
-              
-            </div>
-
-            
-          </div>
-          <!-- .post-meta -->
-        </div>
-        <!-- .card-body -->
-      </div>
-    </a>
-  
-    <a href="/posts/tcp-chaine-encodee/" class="card-wrapper">
-      <div class="card post-preview flex-md-row-reverse">
-        
-
-        <div class="card-body d-flex flex-column">
-          <h1 class="card-title my-2 mt-md-0">
-            TCP - Chaîne encodée
-          </h1>
-
-          <div class="card-text post-content mt-0 mb-2">
-            <p>
-              
-
-
-
-
-
-              # Importation des différentes bibliothèques utilisées
-import socket 
-import codecs 
-
-# Initialisation des paramètres de connexion
-HÔTE = &#39;challenge01.root-me.org&#39;
-PORT = 52021
-
-# Création de la soc...
-            </p>
-          </div>
-
-          <div class="post-meta flex-grow-1 d-flex align-items-end">
-            <div class="me-auto">
-              <!-- posted date -->
-              <i class="far fa-calendar fa-fw me-1"></i>
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class=""
-  data-ts="1693519200"
-  data-df="ll"
-  
->
-  Sep  1, 2023
-</em>
-
-
-              <!-- categories -->
-              
-                <i class="far fa-folder-open fa-fw me-1"></i>
-                <span class="categories">
-                  
-                    Root-Me,
-                    Programmation
-                </span>
-              
-            </div>
-
-            
-          </div>
-          <!-- .post-meta -->
-        </div>
-        <!-- .card-body -->
-      </div>
-    </a>
-  
-    <a href="/posts/sql-injection-authentification/" class="card-wrapper">
-      <div class="card post-preview flex-md-row-reverse">
-        
-
-        <div class="card-body d-flex flex-column">
-          <h1 class="card-title my-2 mt-md-0">
-            SQL injection - Authentification
-          </h1>
-
-          <div class="card-text post-content mt-0 mb-2">
-            <p>
-              
-
-
-
-
-
-              Etape 1 :
-
-Voici à quoi ressemble la page de login pour l’admin : 
-
-
-On peut voir un champ de login ou potentiellement on pourrait mettre ‘admin’ et un champ password où l’on mettra le mot de passe...
-            </p>
-          </div>
-
-          <div class="post-meta flex-grow-1 d-flex align-items-end">
-            <div class="me-auto">
-              <!-- posted date -->
-              <i class="far fa-calendar fa-fw me-1"></i>
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class=""
-  data-ts="1693519200"
-  data-df="ll"
-  
->
-  Sep  1, 2023
-</em>
-
-
-              <!-- categories -->
-              
-                <i class="far fa-folder-open fa-fw me-1"></i>
-                <span class="categories">
-                  
-                    Root-Me,
-                    Web-Serveur
-                </span>
-              
-            </div>
-
-            
-          </div>
-          <!-- .post-meta -->
-        </div>
-        <!-- .card-body -->
-      </div>
-    </a>
-  
-    <a href="/posts/php-assert/" class="card-wrapper">
-      <div class="card post-preview flex-md-row-reverse">
-        
-
-        <div class="card-body d-flex flex-column">
-          <h1 class="card-title my-2 mt-md-0">
-            PHP - assert()
-          </h1>
-
-          <div class="card-text post-content mt-0 mb-2">
-            <p>
-              
-
-
-
-
-
-              Etape 1
-
-L’objectif est premierement d’analyser la page sur laquel on apparait.
-
-
-
-On peut voir une page simple, sans information à part une petite blague du créateur du défie :
-“You will never fin...
-            </p>
-          </div>
-
-          <div class="post-meta flex-grow-1 d-flex align-items-end">
-            <div class="me-auto">
-              <!-- posted date -->
-              <i class="far fa-calendar fa-fw me-1"></i>
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class=""
-  data-ts="1693519200"
-  data-df="ll"
-  
->
-  Sep  1, 2023
-</em>
-
-
-              <!-- categories -->
-              
-                <i class="far fa-folder-open fa-fw me-1"></i>
-                <span class="categories">
-                  
-                    Root-Me,
-                    Web-Serveur
-                </span>
-              
-            </div>
-
-            
-          </div>
-          <!-- .post-meta -->
-        </div>
-        <!-- .card-body -->
-      </div>
-    </a>
-  
-    <a href="/posts/ospf-authentification/" class="card-wrapper">
-      <div class="card post-preview flex-md-row-reverse">
-        
-
-        <div class="card-body d-flex flex-column">
-          <h1 class="card-title my-2 mt-md-0">
-            OSPF-Authentification
-          </h1>
-
-          <div class="card-text post-content mt-0 mb-2">
-            <p>
-              
-
-
-
-
-
-              Etape 1 :
-
-On ouvre la capture Wireshark :
-
-
-
-On peut voir que la capture a déjà était filtré, il y a que le protocole OSPF, allons voir un des paquets.
-
-Etape 2 :
-
-L’objectif est de trouver le cha...
-            </p>
-          </div>
-
-          <div class="post-meta flex-grow-1 d-flex align-items-end">
-            <div class="me-auto">
-              <!-- posted date -->
-              <i class="far fa-calendar fa-fw me-1"></i>
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-
-<em
-  class=""
-  data-ts="1693519200"
-  data-df="ll"
-  
->
-  Sep  1, 2023
+  Sep  5, 2023
 </em>
 
 
@@ -1016,13 +660,13 @@ L’objectif est de trouver le cha...
       </div>
     </a>
   
-    <a href="/posts/mise-en-place-commutateur-telnet/" class="card-wrapper">
+    <a href="/posts/spannig-tree/" class="card-wrapper">
       <div class="card post-preview flex-md-row-reverse">
         
 
         <div class="card-body d-flex flex-column">
           <h1 class="card-title my-2 mt-md-0">
-            Telnet sur commutateur
+            Mise en place de Spanning-Tree
           </h1>
 
           <div class="card-text post-content mt-0 mb-2">
@@ -1033,15 +677,8 @@ L’objectif est de trouver le cha...
 
 
 
-              Configuration d’une authentification telnet :
+              
 
-Switch&amp;gt; enable
-Switch# configure terminal
-
-Switch(config)# username &#39;identifiant&#39; secret &#39;mot de passe&#39;
-
-Switch(config)# line vty 0 15
-Switch(confi...
             </p>
           </div>
 
@@ -1060,11 +697,11 @@ Switch(confi...
 
 <em
   class=""
-  data-ts="1693519200"
+  data-ts="1693864800"
   data-df="ll"
   
 >
-  Sep  1, 2023
+  Sep  5, 2023
 </em>
 
 
@@ -1087,13 +724,13 @@ Switch(confi...
       </div>
     </a>
   
-    <a href="/posts/encodage-ascii/" class="card-wrapper">
+    <a href="/posts/ripv2/" class="card-wrapper">
       <div class="card post-preview flex-md-row-reverse">
         
 
         <div class="card-body d-flex flex-column">
           <h1 class="card-title my-2 mt-md-0">
-            Encodage ASCII
+            Mise en place de RipV2
           </h1>
 
           <div class="card-text post-content mt-0 mb-2">
@@ -1104,13 +741,18 @@ Switch(confi...
 
 
 
-              Etape 1 :
+              Qu’est ce que RipV2 ?
 
-On peut identifier que c’est un code ASCII grâce à la consigne, il nous reste plus qu’à le dechiffrer avec un site comme dCode :
+Comment le mettre en place ?
+
+Configuration de RipV2
+
+
+Exemple
 
 
 
-Voici le flag !
+Comment vérifier son fonctionnement ?
 
             </p>
           </div>
@@ -1130,11 +772,11 @@ Voici le flag !
 
 <em
   class=""
-  data-ts="1693519200"
+  data-ts="1693864800"
   data-df="ll"
   
 >
-  Sep  1, 2023
+  Sep  5, 2023
 </em>
 
 
@@ -1143,8 +785,8 @@ Voici le flag !
                 <i class="far fa-folder-open fa-fw me-1"></i>
                 <span class="categories">
                   
-                    Root-Me,
-                    Cryptographie
+                    Cours,
+                    Cours Réseau
                 </span>
               
             </div>
@@ -1157,13 +799,13 @@ Voici le flag !
       </div>
     </a>
   
-    <a href="/posts/creation-vlan-commutateur/" class="card-wrapper">
+    <a href="/posts/ospf/" class="card-wrapper">
       <div class="card post-preview flex-md-row-reverse">
         
 
         <div class="card-body d-flex flex-column">
           <h1 class="card-title my-2 mt-md-0">
-            VLAN sur commutateur
+            Mise en place de OSPF
           </h1>
 
           <div class="card-text post-content mt-0 mb-2">
@@ -1174,26 +816,19 @@ Voici le flag !
 
 
 
-              Nous allons créer 3 vlans :
+              Qu’est ce que OSPF ?
+
+Comment le mettre en place ?
+
+Configuration de OSPF
 
 
-  
-    
-      Vlan
-      Interfaces
-      Adresse IP
-    
-  
-  
-    
-      vlan 2
-      Fa0/0-9
-      192.168.2.1
-    
-    
-      vlan 3
-      Fa0/10-19
-      192.168....
+Exemple
+
+
+
+Comment vérifier son fonctionnement ?
+
             </p>
           </div>
 
@@ -1212,11 +847,11 @@ Voici le flag !
 
 <em
   class=""
-  data-ts="1693519200"
+  data-ts="1693864800"
   data-df="ll"
   
 >
-  Sep  1, 2023
+  Sep  5, 2023
 </em>
 
 
@@ -1227,6 +862,420 @@ Voici le flag !
                   
                     Cours,
                     Cours Réseau
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
+    <a href="/posts/inter-vlan/" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            Inter-VLAN
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              Qu’est ce que le routage inter-vlan ?
+
+Comment le mettre en place ?
+
+Routeur
+
+
+Exemple
+
+
+
+Commutateur de couche 3
+
+
+
+Exemple
+
+
+
+Comment vérifier son fonctionnement ?
+
+
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1693864800"
+  data-df="ll"
+  
+>
+  Sep  5, 2023
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    Cours,
+                    Cours Réseau
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
+    <a href="/posts/NAT-PAT/" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            La translation d'adresse NAT/PAT
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              Qu’est ce que le NAT ?
+
+NAT Statique
+Explication du NAT Statique
+
+Utilisation : Le NAT statique consiste à associer une adresse IP publique 
+à une adresse IP privée de manière permanente et unidire...
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1693864800"
+  data-df="ll"
+  
+>
+  Sep  5, 2023
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    Cours,
+                    Cours Réseau
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
+    <a href="/posts/postgresql/" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            Cheat Sheet PostgreSQL
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              Connexion
+
+-- si nous sommes connectée en root nous pouvons nous connecter directement comme ça :
+psql 
+
+-- Pour se connecter en local :
+psql -U &amp;lt;username&amp;gt; -d &amp;lt;database&amp;gt; -h &amp;lt;hostname...
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1693778400"
+  data-df="ll"
+  
+>
+  Sep  4, 2023
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    Cours,
+                    PostgreSQL
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
+    <a href="/posts/mysql/" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            Cheat Sheet Mysql
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              A venir
+
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1693778400"
+  data-df="ll"
+  
+>
+  Sep  4, 2023
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    Cours,
+                    Mysql
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
+    <a href="/posts/serveur-nfs-local/" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            Montage d'un serveur NFS (local)
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              A venir
+
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1693692000"
+  data-df="ll"
+  
+>
+  Sep  3, 2023
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    Cours,
+                    Mise en place de service
+                </span>
+              
+            </div>
+
+            
+          </div>
+          <!-- .post-meta -->
+        </div>
+        <!-- .card-body -->
+      </div>
+    </a>
+  
+    <a href="/posts/serveur-ftp-local/" class="card-wrapper">
+      <div class="card post-preview flex-md-row-reverse">
+        
+
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title my-2 mt-md-0">
+            Montage d'un serveur FTP (local)
+          </h1>
+
+          <div class="card-text post-content mt-0 mb-2">
+            <p>
+              
+
+
+
+
+
+              A venir
+
+            </p>
+          </div>
+
+          <div class="post-meta flex-grow-1 d-flex align-items-end">
+            <div class="me-auto">
+              <!-- posted date -->
+              <i class="far fa-calendar fa-fw me-1"></i>
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+
+<em
+  class=""
+  data-ts="1693692000"
+  data-df="ll"
+  
+>
+  Sep  3, 2023
+</em>
+
+
+              <!-- categories -->
+              
+                <i class="far fa-folder-open fa-fw me-1"></i>
+                <span class="categories">
+                  
+                    Cours,
+                    Mise en place de service
                 </span>
               
             </div>
@@ -1241,6 +1290,96 @@ Voici le flag !
   
 </div>
 <!-- #post-list -->
+
+
+  <!-- The paginator for post list on HomgPage. -->
+
+<ul class="pagination align-items-center mt-4 mb-1 ps-lg-2">
+  <!-- left arrow -->
+  
+
+  <li class="page-item disabled">
+    <a class="page-link btn-box-shadow" href="#" aria-label="previous-page">
+      <i class="fas fa-angle-left"></i>
+    </a>
+  </li>
+
+  <!-- page numbers -->
+  
+  
+
+  
+    
+    
+    
+    
+    
+
+    
+
+    
+      <!-- show number -->
+      <li class="page-item  active">
+        <a
+          class="page-link btn-box-shadow"
+          href="/"
+        >1</a>
+      </li>
+    
+  
+    
+    
+    
+    
+    
+
+    
+
+    
+      <!-- show number -->
+      <li class="page-item ">
+        <a
+          class="page-link btn-box-shadow"
+          href="/page2"
+        >2</a>
+      </li>
+    
+  
+    
+    
+    
+    
+    
+
+    
+
+    
+      <!-- show number -->
+      <li class="page-item ">
+        <a
+          class="page-link btn-box-shadow"
+          href="/page3"
+        >3</a>
+      </li>
+    
+  
+
+  <!-- mobile pagination -->
+  <li class="page-index align-middle">
+    <span>1</span>
+    <span class="text-muted">/ 3</span>
+  </li>
+
+  <!-- right arrow -->
+  
+
+  <li class="page-item ">
+    <a class="page-link btn-box-shadow" href="/page2" aria-label="next-page">
+      <i class="fas fa-angle-right"></i>
+    </a>
+  </li>
+</ul>
+<!-- .pagination -->
 
 
 
@@ -1336,26 +1475,6 @@ Voici le flag !
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -1395,10 +1514,6 @@ Voici le flag !
     
     
     
-      
-        
-        
-
   
     
     
@@ -1413,106 +1528,6 @@ Voici le flag !
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1578,6 +1593,96 @@ Voici le flag !
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1587,6 +1692,96 @@ Voici le flag !
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -1613,7 +1808,80 @@ Voici le flag !
     
     
     
-      
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1631,6 +1899,38 @@ Voici le flag !
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1646,6 +1946,463 @@ Voici le flag !
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -1670,7 +2427,15 @@ Voici le flag !
     
     
     
-      
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1688,10 +2453,16 @@ Voici le flag !
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/cours/">Cours</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/root-me/">Root-Me</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/programmation/">Programmation</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/r%C3%A9seau/">Réseau</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/tcp/">TCP</a>
@@ -1700,22 +2471,16 @@ Voici le flag !
         <a class="post-tag btn btn-outline-primary" href="/tags/commutateur/">Commutateur</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/cours/">Cours</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/web-serveur/">Web-Serveur</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/ascii/">ASCII</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/cryptographie/">Cryptographie</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ospf-authentification/">OSPF-Authentification</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/sql/">SQL</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/php-assert/">PHP-assert()</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/telnet/">Telnet</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/web-serveur/">Web-Serveur</a>
       
     </div>
   </div>
@@ -1771,26 +2536,6 @@ Voici le flag !
     
     
     
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
       
         
         
@@ -1830,10 +2575,6 @@ Voici le flag !
     
     
     
-      
-        
-        
-
   
     
     
@@ -1848,106 +2589,6 @@ Voici le flag !
     
     
     
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2013,6 +2654,96 @@ Voici le flag !
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -2022,6 +2753,96 @@ Voici le flag !
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -2048,7 +2869,80 @@ Voici le flag !
     
     
     
-      
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2066,6 +2960,38 @@ Voici le flag !
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2081,6 +3007,463 @@ Voici le flag !
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -2105,7 +3488,15 @@ Voici le flag !
     
     
     
-      
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2123,10 +3514,16 @@ Voici le flag !
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
+        <a class="post-tag btn btn-outline-primary" href="/tags/cours/">Cours</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/tags/root-me/">Root-Me</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/programmation/">Programmation</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/r%C3%A9seau/">Réseau</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/tcp/">TCP</a>
@@ -2135,22 +3532,16 @@ Voici le flag !
         <a class="post-tag btn btn-outline-primary" href="/tags/commutateur/">Commutateur</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/cours/">Cours</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/web-serveur/">Web-Serveur</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/ascii/">ASCII</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/cryptographie/">Cryptographie</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/ospf-authentification/">OSPF-Authentification</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/sql/">SQL</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/php-assert/">PHP-assert()</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/telnet/">Telnet</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/web-serveur/">Web-Serveur</a>
       
     </div>
   </div>
