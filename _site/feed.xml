@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>NZ0H</title>
   <subtitle>Etudiant en deuxième année de BUT R&amp;T</subtitle>
-  <updated>2023-09-26T22:09:49+02:00</updated>
+  <updated>2023-09-26T22:13:54+02:00</updated>
   <author>
     <name>Enzo</name>
     <uri>http://localhost:4000/</uri>
@@ -17,56 +17,6 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
-
-  
-  <entry>
-    <title>Telnet-Authentification</title>
-    <link href="http://localhost:4000/posts/telnet-authentification/" rel="alternate" type="text/html" title="Telnet-Authentification" />
-    <published>2023-09-05T00:00:00+02:00</published>
-  
-    <updated>2023-09-05T00:00:00+02:00</updated>
-  
-    <id>http://localhost:4000/posts/telnet-authentification/</id>
-    <content src="http://localhost:4000/posts/telnet-authentification/" />
-    <author>
-      <name>NZ0H</name>
-    </author>
-
-  
-    
-    <category term="Root-Me" />
-    
-    <category term="Réseau" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      On télécharge le défi, après avoir téléchargé le défi, nous l’onvrons avec Wireshark :
-
-
-
-Nous pouvons voir un échange Telnet qui a était capturé, le paquet transit grace au protocole TCP.
-
-Wireshark a une option permettant de visualiser l’ensemble du trafic transporté via le protocole TCP, pour cela nous faisons un clique droit dans la console en bas:
-
-
-
-Voici le résultat :
-
-
-
-Nous avons trouv...
-    </summary>
-  
-
-  </entry>
 
   
   <entry>
@@ -253,6 +203,51 @@ Exemple
 Comment vérifier son fonctionnement ?
 
 
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>La translation d'adresse NAT/PAT</title>
+    <link href="http://localhost:4000/posts/NAT-PAT/" rel="alternate" type="text/html" title="La translation d&amp;apos;adresse NAT/PAT" />
+    <published>2023-09-05T00:00:00+02:00</published>
+  
+    <updated>2023-09-05T00:00:00+02:00</updated>
+  
+    <id>http://localhost:4000/posts/NAT-PAT/</id>
+    <content src="http://localhost:4000/posts/NAT-PAT/" />
+    <author>
+      <name>NZ0H</name>
+    </author>
+
+  
+    
+    <category term="Cours" />
+    
+    <category term="Cours Réseau" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Qu’est ce que le NAT ?
+
+NAT Statique
+Explication du NAT Statique
+
+Utilisation : Le NAT statique consiste à associer une adresse IP publique 
+à une adresse IP privée de manière permanente et unidirectionnelle. 
+Il est principalement utilisé lorsque vous disposez d'un serveur sur 
+votre réseau privé que vous souhaitez rendre accessible depuis Internet, 
+comme un serveur web ou un serveur de messa...
     </summary>
   
 
