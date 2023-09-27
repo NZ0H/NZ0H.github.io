@@ -1,17 +1,17 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>http://localhost:4000/</id>
+  <id>https://nz0h.github.io/</id>
   <title>NZ0H</title>
   <subtitle>Etudiant en deuxième année de BUT R&amp;T</subtitle>
-  <updated>2023-09-27T21:23:43+02:00</updated>
+  <updated>2023-09-27T21:49:40+02:00</updated>
   <author>
     <name>Enzo</name>
-    <uri>http://localhost:4000/</uri>
+    <uri>https://nz0h.github.io/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="https://nz0h.github.io/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="http://localhost:4000/"/>
+    href="https://nz0h.github.io/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
   <rights> © 2023 Enzo </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>Mise en place de Spanning-Tree</title>
-    <link href="http://localhost:4000/posts/spannig-tree/" rel="alternate" type="text/html" title="Mise en place de Spanning-Tree" />
+    <link href="https://nz0h.github.io/posts/spannig-tree/" rel="alternate" type="text/html" title="Mise en place de Spanning-Tree" />
     <published>2023-09-05T00:00:00+02:00</published>
   
     <updated>2023-09-05T00:00:00+02:00</updated>
   
-    <id>http://localhost:4000/posts/spannig-tree/</id>
-    <content src="http://localhost:4000/posts/spannig-tree/" />
+    <id>https://nz0h.github.io/posts/spannig-tree/</id>
+    <content src="https://nz0h.github.io/posts/spannig-tree/" />
     <author>
       <name>NZ0H</name>
     </author>
@@ -58,13 +58,13 @@
   
   <entry>
     <title>Mise en place de RipV2</title>
-    <link href="http://localhost:4000/posts/ripv2/" rel="alternate" type="text/html" title="Mise en place de RipV2" />
+    <link href="https://nz0h.github.io/posts/ripv2/" rel="alternate" type="text/html" title="Mise en place de RipV2" />
     <published>2023-09-05T00:00:00+02:00</published>
   
     <updated>2023-09-05T00:00:00+02:00</updated>
   
-    <id>http://localhost:4000/posts/ripv2/</id>
-    <content src="http://localhost:4000/posts/ripv2/" />
+    <id>https://nz0h.github.io/posts/ripv2/</id>
+    <content src="https://nz0h.github.io/posts/ripv2/" />
     <author>
       <name>NZ0H</name>
     </author>
@@ -106,13 +106,13 @@ Comment vérifier son fonctionnement ?
   
   <entry>
     <title>Mise en place de OSPF</title>
-    <link href="http://localhost:4000/posts/ospf/" rel="alternate" type="text/html" title="Mise en place de OSPF" />
+    <link href="https://nz0h.github.io/posts/ospf/" rel="alternate" type="text/html" title="Mise en place de OSPF" />
     <published>2023-09-05T00:00:00+02:00</published>
   
     <updated>2023-09-05T00:00:00+02:00</updated>
   
-    <id>http://localhost:4000/posts/ospf/</id>
-    <content src="http://localhost:4000/posts/ospf/" />
+    <id>https://nz0h.github.io/posts/ospf/</id>
+    <content src="https://nz0h.github.io/posts/ospf/" />
     <author>
       <name>NZ0H</name>
     </author>
@@ -154,13 +154,13 @@ Comment vérifier son fonctionnement ?
   
   <entry>
     <title>Inter-VLAN</title>
-    <link href="http://localhost:4000/posts/inter-vlan/" rel="alternate" type="text/html" title="Inter-VLAN" />
+    <link href="https://nz0h.github.io/posts/inter-vlan/" rel="alternate" type="text/html" title="Inter-VLAN" />
     <published>2023-09-05T00:00:00+02:00</published>
   
     <updated>2023-09-05T00:00:00+02:00</updated>
   
-    <id>http://localhost:4000/posts/inter-vlan/</id>
-    <content src="http://localhost:4000/posts/inter-vlan/" />
+    <id>https://nz0h.github.io/posts/inter-vlan/</id>
+    <content src="https://nz0h.github.io/posts/inter-vlan/" />
     <author>
       <name>NZ0H</name>
     </author>
@@ -211,13 +211,13 @@ Comment vérifier son fonctionnement ?
   
   <entry>
     <title>La translation d'adresse NAT/PAT</title>
-    <link href="http://localhost:4000/posts/NAT-PAT/" rel="alternate" type="text/html" title="La translation d&amp;apos;adresse NAT/PAT" />
+    <link href="https://nz0h.github.io/posts/NAT-PAT/" rel="alternate" type="text/html" title="La translation d&amp;apos;adresse NAT/PAT" />
     <published>2023-09-05T00:00:00+02:00</published>
   
     <updated>2023-09-05T00:00:00+02:00</updated>
   
-    <id>http://localhost:4000/posts/NAT-PAT/</id>
-    <content src="http://localhost:4000/posts/NAT-PAT/" />
+    <id>https://nz0h.github.io/posts/NAT-PAT/</id>
+    <content src="https://nz0h.github.io/posts/NAT-PAT/" />
     <author>
       <name>NZ0H</name>
     </author>
