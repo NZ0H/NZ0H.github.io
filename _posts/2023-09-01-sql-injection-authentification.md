@@ -21,7 +21,7 @@ On peut voir un champ de login où potentiellement on pourrait mettre 'admin' et
 
 Comme le titre du défi l'indique, il y a une faille SQL d'authentification sur la page. Pour commencer, nous allons effectuer l'un des tests les plus simples pour trouver la faille SQL :
 
-![Capture d'écran de l'injection SQL](/assets/Images/ROOT-ME/Web%20-%20Serveur/SQL%20Injection%20-%20Authentification/c1.png)
+![Capture d'écran de l'injection SQL](/assets/Images/ROOT-ME/Web%20-%20Serveur/SQL%20Injection%20-%20Authentification/c2.png)
 
 
 Login : 'admin'
@@ -35,4 +35,4 @@ On peut voir que l'injection a fonctionné, mais ! Nous sommes connectés en tan
 Login : admin ';-
 Password : "Champ aléatoire ..,  MAIS OBLIGÉ DE METTRE QUELQUE CHOSE"
 
-![Capture d'écran de l'injection modifiée](/assets/Images/ROOT-ME/Web%20-%20Serveur/SQL%20Injection%20-%20Authentification/c1.pngg)
+![Capture d'écran de l'injection modifiée](/assets/Images/ROOT-ME/Web%20-%20Serveur/SQL%20Injection%20-%20Authentification/c3.png)
