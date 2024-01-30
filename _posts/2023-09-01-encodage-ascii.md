@@ -14,4 +14,4 @@ Objectif : Décoder la chaîne.
 
 On peut identifier que c'est un code ASCII grâce à la consigne. Il ne nous reste plus qu'à le déchiffrer avec un site comme dCode :
 
-![Capture d'écran du défi](/assets/Images/ROOT-ME Cryptanalyse/ENCODAGE-ASCII/Crypto_1.png)
+![Capture d'écran du défi](/assets/Images/ROOT-ME/Cryptanalyse/ENCODAGE-ASCII/Crypto_1.png)
