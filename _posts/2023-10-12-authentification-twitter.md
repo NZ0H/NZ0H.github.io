@@ -14,6 +14,6 @@ Objectif : Une session d’authentification Twitter a été capturée. Retrouvez
 
 Comme pour le défi '***ETHERNET - trame***', l'objectif est de retrouver le mot de passe, mais cette fois-ci dans une capture Wireshark : 
 
-![Image de la capture Wireshark](/assets/images/ROOT-ME/Reseau/Authentification-Twitter/c1.png)
+![Image de la capture Wireshark](/assets/Images/ROOT-ME/Reseau/Authentification-Twitter/c1.png)
 
 Grâce au défi précédent, il est rapide de trouver la réponse ; elle est encore une fois dans le champ ***'Authorization' > 'Credentials'***.
