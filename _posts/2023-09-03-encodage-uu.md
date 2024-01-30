@@ -7,12 +7,10 @@ categories: [Root-Me, Cryptographie]
 tags: [Root-Me, Cryptographie, UU]
 ---
 
+# Encodage - UU
+## Défi
+Objectif : Retrouver le mot de passe de validation.
 
-### Etape 1 : 
+On peut identifier que c'est de l'encodage UU grâce à la consigne. Il ne nous reste plus qu'à le déchiffrer avec un site comme dCode :
 
-On peut identifier que c'est de l'encodage UU grâce à la consigne, il nous reste plus qu'à le dechiffrer avec un site comme dCode :
-
-![](/assets/Images/ROOT-ME/Cryptanalyse/ENCODAGE-UU/c1.PNG)
-
-
-Voici le flag !
+![Capture d'écran du défi](/assets/Images/ROOT-ME/Cryptanalyse/ENCODAGE-UU/c1.PNG)

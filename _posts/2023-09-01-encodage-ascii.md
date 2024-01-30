@@ -7,12 +7,11 @@ categories: [Root-Me, Cryptographie]
 tags: [Root-Me, Cryptographie, ASCII]
 ---
 
+# Encodage - ASCII
+## Défi 
 
-### Etape 1 : 
+Objectif : Décoder la chaîne.
 
-On peut identifier que c'est un code ASCII grâce à la consigne, il nous reste plus qu'à le dechiffrer avec un site comme dCode :
+On peut identifier que c'est un code ASCII grâce à la consigne. Il ne nous reste plus qu'à le déchiffrer avec un site comme dCode :
 
-![](/assets/Images/ROOT-ME/Cryptanalyse/ENCODAGE-ASCII/Crypto_1.png)
-
-
-Voici le flag !
+![Capture d'écran du défi](/assets/Images/ROOT-ME Cryptanalyse/ENCODAGE-ASCII/Crypto_1.png)
