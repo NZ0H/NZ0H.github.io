@@ -79,20 +79,21 @@ line vty 0 4
  transport input ssh
 ```
 
-Grâce à la configuration, on peut identifier cette ligne '***enable secret 5 $1$p8Y6$MCdRLBzuGlfOs9S.hXOp0.***', où '**$1$p8Y6$MCdRLBzuGlfOs9S.hXOp0.**' est le hash MD5 cisco.
+Grâce à la configuration, nous pouvons identifier cette ligne '***enable secret 5 $1$p8Y6$MCdRLBzuGlfOs9S.hXOp0.***', où '**$1$p8Y6$MCdRLBzuGlfOs9S.hXOp0.**' est le hash MD5 cisco.
 
 Pour commencer, nous allons utiliser hashcat en faisant une attaque par dictionnaire pour trouver le mot de passe, via la commande '***hashcat -a 0 -m 500 hash.txt rockyou.txt***'.
 
-Malheureusement, c'est un échec. Le mot de passe n'est pas présent dans la liste, donc on pourrait faire une attaque par force brute. Étant un défi de cybersécurité, les plateformes n'ont pas pour objectif de miser sur la puissance d'un ordinateur pour résoudre les défis. Il doit y avoir une autre méthode.
+Malheureusement, c’est un échec. Le mot de passe n’est pas présent dans la liste, donc nous pourions faire une attaque par force brute. Étant un défi de cybersécurité, les plateformes n’ont pas pour objectif de miser sur la puissance d’un ordinateur pour résoudre les défis. Il doit y avoir une autre méthode.
 
-On peut identifier 3 comptes sur le routeur :
+Nous pouvons identifier 3 comptes sur le routeur :
 ```cisco
 username hub password 7 025017705B3907344E 
 username admin privilege 15 password 7 10181A325528130F010D24
 username guest password 7 124F163C42340B112F3830
 ```
 
-Le chiffrement cisco de type 7 est extrêmement faible, on va donc utiliser un petit script python pour trouver les mots de passes. Notre objectif en faisant ça est d'espérer que dans ce cas l'erreur vient de l'humain, et que le mot de passe soit le même ou alors donne un indice sur la structure du mot de passe.
+Le chiffrement cisco de type 7 étant extrêmement faible, nous pouvons donc utiliser un petit script python pour trouver les mots de passe. 
+Notre objectif en faisant ça est d’espérer que dans ce cas l’erreur vient de l’humain, et que le mot de passe soit le même ou alors donne un indice sur la structure du mot de passe.
 
 Voici le script :
 ```python
@@ -112,7 +113,7 @@ print(f'Mot de passe du Hub : {password_hub}\nMot de passe du Admin : {password_
 Le script retourne ce résultat : 
 ![image](/assets/Images/ROOT-ME/Reseau/cisco-mdp/c1.png)
 
-On peut identifier une structure de mot de passe. Ils commencent tous par '6sK0_' + le nom de compte.
+Nous pouvons identifier une structure de mot de passe. Ils commencent tous par ‘6sK0_’ + le nom de compte.
 
 
 
