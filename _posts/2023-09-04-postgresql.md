@@ -3,8 +3,8 @@ layout: post
 title: Cheat Sheet PostgreSQL
 date: 2023-09-04
 author: NZ0H
-categories: [Cours, PostgreSQL]
-tags: [Cours, SQL, PostgreSQL]
+categories: [Cheat-Sheet, PostgreSQL]
+tags: [Cheat-Sheet, SQL, PostgreSQL]
 ---
 
 

@@ -1,3 +1,12 @@
+---
+layout: post
+title: Simple CTF
+date: 2024-02-03
+author: NZ0H
+categories: [Try Hack Me,CTF-Simple]
+tags: [THM,CTF]
+---
+
 # Simple CTF
 ## Défi
 
