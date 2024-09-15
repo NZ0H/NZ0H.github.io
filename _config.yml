@@ -16,10 +16,10 @@ timezone: Europe/Paris
 
 title: NZ0H # the main title
 
-tagline: Etudiant en deuxième année de BUT R&T # it will display as the sub-title
+tagline: Etudiant en troisième année de BUT R&T # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Etudiant en deuxième année de BUT R&T
+  Etudiant en troisième année de BUT R&T
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
