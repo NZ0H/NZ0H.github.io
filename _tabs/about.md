@@ -3,7 +3,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-**Étudiant en deuxième année de Bachelor Universitaire de Technologie dans le domaine des Réseaux et Télécommunications, je suis actuellement en quête d'une spécialisation axée sur la sécurité informatique.**
+**Étudiant en troisième année de Bachelor Universitaire de Technologie dans le domaine des Réseaux et Télécommunications, je suis actuellement en quête d'une spécialisation axée sur la sécurité informatique.**
 
 **Compétences :**
 
